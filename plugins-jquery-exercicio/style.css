@@ -1,0 +1,54 @@
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #fafafa;
+margin: 20px;
+}
+
+h1 {
+color: #333;
+margin-bottom: 30px;
+}
+
+.carousel {
+width: 600px;
+margin: 0 auto 40px;
+}
+
+.carousel img {
+width: 100%;
+border-radius: 10px;
+}
+
+form {
+width: 300px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+input {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+label.error {
+color: red;
+font-size: 0.9em;
+margin-top: -8px;
+}
