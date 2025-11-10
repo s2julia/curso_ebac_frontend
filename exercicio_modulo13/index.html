@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercício Bootstrap</title>
+
+<!-- Bootstrap CSS -->
+<link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container">
+    <a class="navbar-brand" href="#">Meu Site Bootstrap</a>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/400?1" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?2" class="d-block w-100" alt="Imagem 2">
+    </div>
+    <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?3" class="d-block w-100" alt="Imagem 3">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Grid + Cards -->
+<div class="container">
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?1" class="card-img-top" alt="Imagem 1">
+        <div class="card-body">
+            <h5 class="card-title">Título 1</h5>
+            <p class="card-text">Este é o conteúdo do primeiro card. Você pode colocar uma descrição, texto ou link.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?2" class="card-img-top" alt="Imagem 2">
+        <div class="card-body">
+            <h5 class="card-title">Título 2</h5>
+            <p class="card-text">Card número dois, adaptável em todas as telas graças ao grid do Bootstrap.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?3" class="card-img-top" alt="Imagem 3">
+        <div class="card-body">
+            <h5 class="card-title">Título 3</h5>
+            <p class="card-text">Conteúdo do terceiro card. Em smartphones, ocupa 1 por linha; no tablet, 2; no desktop, 3.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?4" class="card-img-top" alt="Imagem 4">
+        <div class="card-body">
+            <h5 class="card-title">Título 4</h5>
+            <p class="card-text">Mais um card para completar o grid e deixar o layout responsivo mais interessante.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?5" class="card-img-top" alt="Imagem 5">
+        <div class="card-body">
+            <h5 class="card-title">Título 5</h5>
+            <p class="card-text">Bootstrap facilita a criação de layouts responsivos sem precisar escrever muito CSS.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+        <img src="https://picsum.photos/400/250?6" class="card-img-top" alt="Imagem 6">
+        <div class="card-body">
+            <h5 class="card-title">Título 6</h5>
+            <p class="card-text">Experimente redimensionar a tela para ver o comportamento do grid em diferentes tamanhos.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">Desenvolvido com ❤️ e Bootstrap</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
