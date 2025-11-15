@@ -1,0 +1,23 @@
+// sass/_base.scss
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: variaveis.$larguraContainer;
+    width: 100%;
+    margin: 0 auto;
+}
