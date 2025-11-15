@@ -1,0 +1,27 @@
+/* 🧱 Mixin para centralizar container */
+.container-mixin() {
+    max-width: @max-width-container;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 🟩 Mixin para botões */
+.button-mixin(@bg-color, @text-color) {
+    display: block;
+    background-color: @bg-color;
+    color: @text-color;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: @radius-default;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+/* 🖼️ Grid de produtos */
+.products-grid(@cols) {
+    display: grid;
+    grid-template-columns: repeat(@cols, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+}

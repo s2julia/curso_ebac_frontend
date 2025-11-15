@@ -1,0 +1,81 @@
+/* ==== IMPORTS ==== */
+@import "variables.less";
+@import "mixins.less";
+@import "maps.less";
+@import "media.less";
+
+/* ==== ESTILOS GERAIS ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-main;
+}
+
+body {
+    background-color: @cores[fundo];
+}
+
+li {
+    list-style: none;
+}
+
+/* ==== LAYOUT ==== */
+.container {
+    .container-mixin();
+}
+
+/* ==== HEADER ==== */
+header {
+    background-color: @cores[header];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: @padding-default 0;
+    }
+}
+
+/* MENU */
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: @cores[branco];
+            text-decoration: none;
+        }
+    }
+}
+
+/* ==== SEÇÕES ==== */
+section {
+    padding: 56px 0;
+}
+
+/* ==== PRODUTOS ==== */
+.products {
+    margin-top: 40px;
+    .products-grid(3);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: @radius-large;
+}
+
+/* Botão de produto */
+.product-button {
+    .button-mixin(@cores[botao], @cores[branco]);
+
+    &:hover {
+        background-color: @cores[botao-hover];
+    }
+}
