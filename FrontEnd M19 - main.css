@@ -1,0 +1,49 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* BLOCO */
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+}
+
+/* ELEMENTO */
+.produtos__item {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* ELEMENTO */
+.produtos__imagem {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* ELEMENTO */
+.produtos__nome {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+/* ELEMENTO */
+.produtos__descricao {
+    color: gray;
+}
+
+/* MODIFICADOR */
+.produtos__item--destaque {
+    border: 2px solid gold;
+    padding: 8px;
+    background-color: #ffff42;
+}
